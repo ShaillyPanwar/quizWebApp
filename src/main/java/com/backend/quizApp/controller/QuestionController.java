@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class QuestionController {
     @GetMapping("allQuestions")
     public String getAllQuestions(){
-        return "Here are all the questions.";
+        return questionService.getAllQuestions; //uses getQuestion as service layer object where getAllQuestions is method name
     }
 }
