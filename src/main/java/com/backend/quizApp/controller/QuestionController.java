@@ -32,5 +32,18 @@ public class QuestionController {
         return questionService.deleteQuestionNumber(number);
     }
 
+    @PatchMapping("update/{number}")  //Partial updates
+    public Questions updateQuestion(@PathVariable int number,@RequestBody Questions updatedQuestion) {
+
+        return questionService.updateQuestion(number, updatedQuestion);
+    }
+
+    @PutMapping("replace/{id}")
+    public Questions replaceQuestion(@PathVariable int id,@RequestBody Questions updatedQuestion){
+        updatedQuestion.setId(id);
+        return questionService.replaceQuestion(updatedQuestion);
+    }
+
+
 
 }
