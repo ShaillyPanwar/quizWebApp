@@ -1,12 +1,11 @@
 package com.backend.quizApp.service;
 
-import com.backend.quizApp.Questions;
+import com.backend.quizApp.model.Questions;
 import com.backend.quizApp.dao.QuestionsDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.ArrayList;
 import java.util.List;
