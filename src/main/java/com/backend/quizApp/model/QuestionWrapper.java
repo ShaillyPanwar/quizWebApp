@@ -1,0 +1,25 @@
+package com.backend.quizApp.model;
+
+import lombok.Data;
+
+@Data
+public class QuestionWrapper {
+    private int id;
+    private String question_title;
+    private String option1;
+    private String option2;
+    private String option3;
+    private String option4;
+    private String difficulty_level;
+
+
+    public QuestionWrapper(int id, String question_title, String option1, String option2, String option3, String option4, String difficulty_level) {
+        this.id = id;
+        this.question_title = question_title;
+        this.option1 = option1;
+        this.option2 = option2;
+        this.option3 = option3;
+        this.option4 = option4;
+        this.difficulty_level = difficulty_level;
+    }
+}
